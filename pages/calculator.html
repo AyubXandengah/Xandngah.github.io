@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>زانینا نـمران ل تاقیكرنا ویزاری</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../style/calculator.css" />
+  </head>
+  <body>
+    <i class="fas fa-pencil-alt school-icons" style="left: 10%; top: 20%"></i>
+    <i
+      class="fas fa-ruler-combined school-icons"
+      style="right: 15%; top: 40%"
+    ></i>
+    <i class="fas fa-book school-icons" style="left: 20%; top: 70%"></i>
+
+    <!-- واجهة الإدخال -->
+    <div class="container" id="inputContainer">
+      <h1>
+        <i class="fas fa-calculator"></i>
+        زانینا نمران ل تاقیكرنا ویزاری بۆ پولا نەهێ
+      </h1>
+      <h2 style="text-align: center">
+        <img src="../images/logo.png" style="width: 150px; height: auto" />
+      </h2>
+      <h3 style="text-align: center">
+        ئەڤ بینكە هایتە ئامادەكرن ژلایێ پەیجێ خاندنگە Xandngah
+      </h3>
+      <h3 style="text-align: center"></h3>
+      <div class="input-grid">
+        <div class="input-group" style="animation-delay: 0.2s">
+          <label>بیركاری</label>
+          <input
+            type="number"
+            min="0"
+            max="100"
+            step="0.1"
+            placeholder="نمرە سەدی داخل بكە"
+          />
+        </div>
+        <div class="input-group" style="animation-delay: 0.3s">
+          <label>زانست</label>
+          <input
+            type="number"
+            min="0"
+            max="100"
+            step="0.1"
+            placeholder="نمرە سەدی داخل بكە"
+          />
+        </div>
+        <div class="input-group" style="animation-delay: 0.4s">
+          <label>كۆمەڵایەتی</label>
+          <input
+            type="number"
+            min="0"
+            max="100"
+            step="0.1"
+            placeholder="نمرە سەدی داخل بكە"
+          />
+        </div>
+        <div class="input-group" style="animation-delay: 0.5s">
+          <label>كوردی</label>
+          <input
+            type="number"
+            min="0"
+            max="100"
+            step="0.1"
+            placeholder="نمرە سەدی داخل بكە"
+          />
+        </div>
+        <div class="input-group" style="animation-delay: 0.6s">
+          <label>ئینگلیزی</label>
+          <input
+            type="number"
+            min="0"
+            max="100"
+            step="0.1"
+            placeholder="نمرە سەدی داخل بكە"
+          />
+        </div>
+        <div class="input-group" style="animation-delay: 0.7s">
+          <label>عەرەبی</label>
+          <input
+            type="number"
+            min="0"
+            max="100"
+            step="0.1"
+            placeholder="نمرە سەدی داخل بكە"
+          />
+        </div>
+        <div class="input-group" style="animation-delay: 0.8s">
+          <label>ئیسلامی</label>
+          <input
+            type="number"
+            min="0"
+            max="100"
+            step="0.1"
+            placeholder="نمرە سەدی داخل بكە"
+          />
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button class="calculate-btn" onclick="calculate()">
+          <i class="fas fa-calculator"></i>
+          هەژمارتنا نمرە
+        </button>
+        <button class="reset-btn" onclick="resetInputs()">
+          <i class="fas fa-undo"></i>
+          ژێبرن
+        </button>
+      </div>
+    </div>
+
+    <!-- قسم النتائج -->
+    <div class="container results-container" id="resultsContainer">
+      <h2 class="results-title">
+        <i class="fas fa-poll"></i>
+        ئەنجام
+      </h2>
+      <table class="results-table" id="resultsTable">
+        <thead>
+          <tr>
+            <th>بابەت</th>
+            <th>نمرە</th>
+            <th>نمرەیێ پێتڤی</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="button-group">
+        <button class="back-btn" onclick="showInput()">
+          <i class="fas fa-arrow-left"></i>
+          زڤرین
+        </button>
+      </div>
+    </div>
+
+    <script src="../js/calculator.js"></script>
+  </body>
+</html>
